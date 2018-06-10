@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1423</width>
+    <height>977</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>4</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <kerning>true</kerning>
+   </font>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>优力克机器人</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTableWidget" name="tableWidget_subscribe">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>30</y>
+      <width>231</width>
+      <height>891</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_map">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>700</y>
+      <width>241</width>
+      <height>221</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_charging_pile">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>170</y>
+      <width>241</width>
+      <height>221</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_navigation_point">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>430</y>
+      <width>241</width>
+      <height>221</height>
+     </rect>
+    </property>
+   </widget>
+<<<<<<< HEAD
+=======
+   <widget class="MyMapView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>280</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+>>>>>>> newest commit
+  </widget>
+  <widget class="QMenuBar" name="menu">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1423</width>
+<<<<<<< HEAD
+     <height>22</height>
+=======
+     <height>25</height>
+>>>>>>> newest commit
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_robot">
+    <property name="title">
+     <string>机器人</string>
+    </property>
+    <addaction name="action_connect"/>
+    <addaction name="separator"/>
+    <addaction name="action_disconnect"/>
+   </widget>
+   <widget class="QMenu" name="menu_map">
+    <property name="title">
+     <string>制图</string>
+    </property>
+    <addaction name="action_online_map_start"/>
+    <addaction name="separator"/>
+    <addaction name="action_online_map_stop"/>
+    <addaction name="separator"/>
+    <addaction name="action_outline_map_start"/>
+    <addaction name="separator"/>
+    <addaction name="action_outline_map_stop"/>
+    <addaction name="separator"/>
+    <addaction name="action_online_map_save"/>
+   </widget>
+   <widget class="QMenu" name="menu_navigation">
+    <property name="title">
+     <string>导航</string>
+    </property>
+    <addaction name="action_navigation_start"/>
+    <addaction name="separator"/>
+    <addaction name="action_navigation_stop"/>
+   </widget>
+   <widget class="QMenu" name="menu_patrol">
+    <property name="title">
+     <string>巡逻</string>
+    </property>
+    <addaction name="action_patrol_start"/>
+    <addaction name="separator"/>
+    <addaction name="action_patrol_stop"/>
+   </widget>
+   <widget class="QMenu" name="menu_charging">
+    <property name="title">
+     <string>充电</string>
+    </property>
+    <addaction name="actioncharging_start"/>
+    <addaction name="separator"/>
+    <addaction name="actioncharging_stop"/>
+    <addaction name="separator"/>
+    <addaction name="action_charging_suspend"/>
+   </widget>
+   <widget class="QMenu" name="menu_voice">
+    <property name="title">
+     <string>语音</string>
+    </property>
+    <addaction name="action_merging_start"/>
+    <addaction name="separator"/>
+    <addaction name="action_merging_stop"/>
+   </widget>
+   <widget class="QMenu" name="menu_volume_sound">
+    <property name="title">
+     <string>音量</string>
+    </property>
+    <addaction name="action_volume_0"/>
+    <addaction name="separator"/>
+    <addaction name="action_volume_10"/>
+    <addaction name="separator"/>
+    <addaction name="action_volume_20"/>
+    <addaction name="separator"/>
+    <addaction name="action_volume_30"/>
+    <addaction name="separator"/>
+    <addaction name="action_volume_40"/>
+    <addaction name="separator"/>
+    <addaction name="action_volume_50"/>
+    <addaction name="separator"/>
+    <addaction name="action_volume_60"/>
+    <addaction name="separator"/>
+    <addaction name="action_volume_70"/>
+    <addaction name="separator"/>
+    <addaction name="action_volume_80"/>
+    <addaction name="separator"/>
+    <addaction name="action_volume_90"/>
+    <addaction name="separator"/>
+    <addaction name="action_volume_100"/>
+   </widget>
+   <widget class="QMenu" name="menu_subscribe">
+    <property name="title">
+     <string>订阅</string>
+    </property>
+    <addaction name="action_nomal_subscribe"/>
+   </widget>
+   <addaction name="menu_robot"/>
+   <addaction name="menu_map"/>
+   <addaction name="menu_navigation"/>
+   <addaction name="menu_patrol"/>
+   <addaction name="menu_charging"/>
+   <addaction name="menu_voice"/>
+   <addaction name="menu_volume_sound"/>
+   <addaction name="menu_subscribe"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_connect">
+   <property name="text">
+    <string>连接</string>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+  </action>
+  <action name="action_disconnect">
+   <property name="text">
+    <string>断开</string>
+   </property>
+  </action>
+  <action name="action_online_map_start">
+   <property name="text">
+    <string>开始在线制图</string>
+   </property>
+  </action>
+  <action name="action_online_map_stop">
+   <property name="text">
+    <string>结束在线制图</string>
+   </property>
+  </action>
+  <action name="action_outline_map_start">
+   <property name="text">
+    <string>开始离线制图</string>
+   </property>
+  </action>
+  <action name="action_outline_map_stop">
+   <property name="text">
+    <string>停止离线制图</string>
+   </property>
+  </action>
+  <action name="action_online_map_save">
+   <property name="text">
+    <string>保存在线制图</string>
+   </property>
+  </action>
+  <action name="action_navigation_start">
+   <property name="text">
+    <string>开始导航</string>
+   </property>
+  </action>
+  <action name="action_navigation_stop">
+   <property name="text">
+    <string>停止导航</string>
+   </property>
+  </action>
+  <action name="action_patrol_start">
+   <property name="text">
+    <string>开始巡逻</string>
+   </property>
+  </action>
+  <action name="action_patrol_stop">
+   <property name="text">
+    <string>停止巡逻</string>
+   </property>
+  </action>
+  <action name="actioncharging_start">
+   <property name="text">
+    <string>开始充电</string>
+   </property>
+  </action>
+  <action name="actioncharging_stop">
+   <property name="text">
+    <string>停止充电</string>
+   </property>
+  </action>
+  <action name="action_charging_suspend">
+   <property name="text">
+    <string>终止充电</string>
+   </property>
+  </action>
+  <action name="action_merging_start">
+   <property name="text">
+    <string>开始合成</string>
+   </property>
+  </action>
+  <action name="action_merging_stop">
+   <property name="text">
+    <string>停止合成</string>
+   </property>
+  </action>
+  <action name="action_nomal_subscribe">
+   <property name="text">
+    <string>常用订阅</string>
+   </property>
+  </action>
+  <action name="action_volume_0">
+   <property name="text">
+    <string>0</string>
+   </property>
+  </action>
+  <action name="action_volume_10">
+   <property name="text">
+    <string>10%</string>
+   </property>
+  </action>
+  <action name="action_volume_20">
+   <property name="text">
+    <string>20%</string>
+   </property>
+  </action>
+  <action name="action_volume_30">
+   <property name="text">
+    <string>30%</string>
+   </property>
+  </action>
+  <action name="action_volume_40">
+   <property name="text">
+    <string>40%</string>
+   </property>
+  </action>
+  <action name="action_volume_50">
+   <property name="text">
+    <string>50%</string>
+   </property>
+  </action>
+  <action name="action_volume_60">
+   <property name="text">
+    <string>60%</string>
+   </property>
+  </action>
+  <action name="action_volume_70">
+   <property name="text">
+    <string>70%</string>
+   </property>
+  </action>
+  <action name="action_volume_80">
+   <property name="text">
+    <string>80%</string>
+   </property>
+  </action>
+  <action name="action_volume_90">
+   <property name="text">
+    <string>90%</string>
+   </property>
+  </action>
+  <action name="action_volume_100">
+   <property name="text">
+    <string>100%</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+<<<<<<< HEAD
+=======
+ <customwidgets>
+  <customwidget>
+   <class>MyMapView</class>
+   <extends>QGraphicsView</extends>
+   <header>mymapview.h</header>
+  </customwidget>
+ </customwidgets>
+>>>>>>> newest commit
+ <resources/>
+ <connections/>
+</ui>
