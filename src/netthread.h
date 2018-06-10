@@ -4,10 +4,9 @@
 #include <QThread>
 #include <WinSock2.h>
 #include <Windows.h>
-<<<<<<< HEAD
-=======
+
 #include "unique.h"
->>>>>>> newest commit
+
 
 class NetThread : public QThread
 {
@@ -26,11 +25,11 @@ public:
     //返回连接状态
     bool isConnected();
     //发送消息
-<<<<<<< HEAD
+
     void sendMessage(char* cmd,int length);
-=======
+
     void sendMessage(structCmd* Cmd);
->>>>>>> newest commit
+
 
 signals:
     void sig_connected(bool);

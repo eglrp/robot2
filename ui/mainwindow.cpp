@@ -64,13 +64,10 @@ void MainWindow::connectRobot_slot(){
  * @brief MainWindow::disconnectRobot_slot
  */
 void MainWindow::disconnectRobot_slot(){
-<<<<<<< HEAD
-    netThread->disconnectRobot();
-=======
+
     //断开连接
     netThread->disconnectRobot();
 
->>>>>>> newest commit
 }
 /**
  * 初始化窗体信息
@@ -80,10 +77,8 @@ void MainWindow::initTableWidget(){
 
     //状态栏显示机器人电量
     showPowerValue();
-<<<<<<< HEAD
-=======
+
     //状态栏显示网络连接状态
->>>>>>> newest commit
     showConnectLabel();
 
     subscribeItemText.clear();
@@ -354,7 +349,6 @@ void MainWindow::changeSubscribe_slot(QTableWidgetItem *item){
     //每个消息容器的大小
     std::vector<int> numbers;
 
-<<<<<<< HEAD
 
     //当单选框状态改变，将执行此槽函数
     //遍历所有item，如果为选中的状态，将会加入数组中
@@ -369,7 +363,6 @@ void MainWindow::changeSubscribe_slot(QTableWidgetItem *item){
         }
     }
 
-=======
     //标识是否有订阅消息
     bool flag=false;
 
@@ -396,7 +389,7 @@ void MainWindow::changeSubscribe_slot(QTableWidgetItem *item){
     }
 
 
->>>>>>> newest commit
+
     qDebug()<<subscribeItems[item->row()];
     qDebug()<<item->row();
 }
@@ -520,10 +513,7 @@ void MainWindow::showConnectStatus(bool isConnected){
     if(isConnected){
         statusLabel->setText("已连接");
         statusLabel->setStyleSheet("background-color: skyblue;color:white");
-<<<<<<< HEAD
 
-=======
->>>>>>> newest commit
         }
     else{
         statusLabel->setStyleSheet("background-color: skyblue;color:red");

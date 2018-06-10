@@ -32,28 +32,26 @@ SOURCES += \
     src/powerprogressbar.cpp \
     src/netthread.cpp \
     ui/connecterrordialog.cpp \
-    ui/connecterrordialog.cpp \
-    ui/mainwindow.cpp \
-<<<<<<< HEAD
+    ui/mymapview.cpp \
     src/unique.cpp
-=======
-    src/unique.cpp \
-    ui/mymapview.cpp
->>>>>>> newest commit
+
+
+
+
+
 
 HEADERS += \
     ui/mainwindow.h \
     src/powerprogressbar.h \
     src/netthread.h \
     ui/connecterrordialog.h \
-    ui/connecterrordialog.h \
-    ui/mainwindow.h \
-<<<<<<< HEAD
+    ui/mymapview.h \
     src/unique.h
-=======
-    src/unique.h \
-    ui/mymapview.h
->>>>>>> newest commit
+
+
+
+
+
 
 FORMS += \
     ui/mainwindow.ui \

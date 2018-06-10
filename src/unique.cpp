@@ -1,12 +1,10 @@
 ﻿#include "unique.h"
 #include <iostream>
-<<<<<<< HEAD
+#include <QDebug>
+
 using namespace std;
 
-Unique::Unique()
-{
 
-}
 
 /**
  * @brief Unique::command
@@ -43,11 +41,9 @@ structCmd* Unique::command(int protocal, int number, QString jsonStr){
     //命令总长度
     Cmd->length = 57+jsonStr.length();
     //命令的内容
-<<<<<<< HEAD
-    Cmd->cmd = new char[Cmd->cmdLength];
-=======
+
     Cmd->cmd = new char[Cmd->length];
->>>>>>> newest commit
+
     //数据的长度header+data
     memcpy(Cmd->cmd,    dataLength, 4);
     //header
@@ -57,9 +53,8 @@ structCmd* Unique::command(int protocal, int number, QString jsonStr){
     return Cmd;
 }
 
-<<<<<<< HEAD
 
-=======
+
 /**
  * @brief Unique::subscribeMessage
  * @param topic-----消息
@@ -67,7 +62,7 @@ structCmd* Unique::command(int protocal, int number, QString jsonStr){
  * @param numbers---消息的容量
  * @return 返回--指令
  */
->>>>>>> newest commit
+
 structCmd* Unique::subscribeMessage(std::vector<QString> topic, std::vector<int> topicID, std::vector<int> numbers){
 
     structCmd *Cmd = new structCmd();
@@ -87,11 +82,9 @@ structCmd* Unique::subscribeMessage(std::vector<QString> topic, std::vector<int>
         jsonStr += "\"numbers\":"      + QString("[]")    + "";
         jsonStr += "}";
 
-<<<<<<< HEAD
-        return Command(SUBSCRIBE, 0, jsonStr);
-=======
+
         return command(SUBSCRIBE, 0, jsonStr);
->>>>>>> newest commit
+
     }
 
     //订阅
@@ -117,13 +110,10 @@ structCmd* Unique::subscribeMessage(std::vector<QString> topic, std::vector<int>
     jsonStr += "\"numbers\":"      + numbersArray                               + ""; //每个消息容器的大小
     jsonStr += "}";
 
-<<<<<<< HEAD
-    //返回完整数据包
-    return Command(SUBSCRIBE, 0, jsonStr);
-=======
+
     qDebug()<<jsonStr<<endl;
 
     //返回完整数据包
     return command(SUBSCRIBE, 0, jsonStr);
->>>>>>> newest commit
+
 }

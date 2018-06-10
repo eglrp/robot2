@@ -62,10 +62,7 @@ struct structCmd
     char* cmd;
     //命令长度
     int length;
-<<<<<<< HEAD
-=======
 
->>>>>>> newest commit
     structCmd() {cmd=NULL;length=0;}
     ~structCmd(){delete cmd;}
 };

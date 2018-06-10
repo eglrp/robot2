@@ -45,7 +45,7 @@ void NetThread::connectRobot(){
         cout<<"socket connect failed"<<endl;
 
         //提示框----连接不成功时提示检查网络连接
-        QMessageBox::warning(NULL,"提示", "连接错误，请检查网络连接！",QMessageBox::Yes,QMessageBox::No);
+        QMessageBox::warning(NULL,"提示", "连接错误，请检查网络连接！",NULL,NULL);
         WSACleanup();
         closesocket(socket);
         return ;
@@ -84,10 +84,9 @@ bool NetThread::isConnected(){
  * @param cmd------待发送的数据
  * @param length---数据长度
  */
-<<<<<<< HEAD
-void NetThread::sendMessage(char *cmd, int length){
 
-=======
+
+
 void NetThread::sendMessage(structCmd* Cmd){
 
     char* m_cmd = Cmd->cmd;
@@ -121,7 +120,6 @@ void NetThread::sendMessage(structCmd* Cmd){
         }
 
     }
->>>>>>> newest commit
 }
 
 void NetThread::run(){

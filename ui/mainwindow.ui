@@ -68,8 +68,8 @@
      </rect>
     </property>
    </widget>
-<<<<<<< HEAD
-=======
+
+
    <widget class="MyMapView" name="graphicsView">
     <property name="geometry">
      <rect>
@@ -80,7 +80,7 @@
      </rect>
     </property>
    </widget>
->>>>>>> newest commit
+
   </widget>
   <widget class="QMenuBar" name="menu">
    <property name="geometry">
@@ -88,11 +88,11 @@
      <x>0</x>
      <y>0</y>
      <width>1423</width>
-<<<<<<< HEAD
+
      <height>22</height>
-=======
+
      <height>25</height>
->>>>>>> newest commit
+
     </rect>
    </property>
    <widget class="QMenu" name="menu_robot">
@@ -338,7 +338,7 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
-<<<<<<< HEAD
+
 =======
  <customwidgets>
   <customwidget>
